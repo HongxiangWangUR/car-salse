@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Erp System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    body {
+        position: relative; 
+    }
+    #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+    #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+    #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+    #section4 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+    #section5 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+
+    #linkcolor{ color:white;}
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Product Sales System</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">manage warehouse</a></li>
+          <li><a href="#section2">customers</a></li>
+          <li><a href="#section3">product</a></li>
+          <li><a href="#section4">storage</a></li>
+          <li><a href="#section5">sales</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="section1" class="container-fluid">
+  <h1>Warehouse</h1>
+  <a href="../php/show_warehouse.php" id="linkcolor">Show All Warehouse</a>
+  </br>
+  <a href="manage_warehouse.html" id="linkcolor">Manage Warehouse</a>
+</div>
+<div id="section2" class="container-fluid">
+  <h1>Customers</h1>
+  <a href="../php/show_user.php" id="linkcolor">Show All Customers</a>
+</div>
+<div id="section3" class="container-fluid">
+  <h1>Product</h1>
+  <a href="../php/show_product.php" id="linkcolor">Show All Products</a>
+</div>
+<div id="section4" class="container-fluid">
+  <h1>Storage</h1>
+  <a href="../php/show_storage.php" id="linkcolor">Show Storages</a>
+  </br>
+  <a href="../php/manage_storage.php" id="linkcolor">Manage Storage</a>
+</div>
+<div id="section5" class="container-fluid">
+  <h1>Sales</h1>
+  <a href="../php/show_sales.php" id="linkcolor">Show All Sales</a>
+</div>
+</body>
+</html>
